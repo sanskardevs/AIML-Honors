@@ -1,4 +1,3 @@
-
 # AIML Honors
 
 A collection of assignments, practicals, and projects completed as part of the AIML Honors program.
@@ -51,7 +50,7 @@ python3 employee_management.py
 
 ---
 
-### Assignment 3: Employee Management System Using Database
+### Assignment 3: Employee Management System Using MySQL
 
 A menu-driven application that manages employee records in a relational database using Python classes and SQL operations.
 
@@ -88,6 +87,35 @@ python3 employee_database.py
 
 ---
 
+### Assignment 4: Employee Management System Using SQLite
+
+A menu-driven Python application that performs CRUD operations on employee records using SQLite and object-oriented programming.
+
+**Features**
+- Add employee records
+- Display all employee records
+- Search employees by ID
+- Update employee details
+- Delete employee records
+- Automatically create the employee table if it does not exist
+- Store employee records in a local database file
+- Handle duplicate employee IDs and invalid menu choices
+
+**Technologies:** Python, SQLite, SQL, OOP
+
+**Database setup**
+
+The application automatically creates the `employee.db` database file and the `employee` table when executed for the first time. No manual database setup is required.
+
+**Run**
+```bash
+python3 employee_sqlite.py
+```
+
+**Note:** SQLite is included in Python's standard library, so no additional database package is required.
+
+---
+
 ## 🛠️ Technologies Used
 
 - Python 3
@@ -97,7 +125,9 @@ python3 employee_database.py
 - Pandas
 - CSV file handling
 - MySQL and SQL
+- SQLite
 - Database connectivity
+- Exception handling
 
 ## 🎯 Learning Objectives
 
@@ -107,6 +137,7 @@ python3 employee_database.py
 - Implement factory-based object creation.
 - Perform CRUD operations on CSV files and databases.
 - Execute SQL queries using Python.
+- Understand relational database operations.
 - Build menu-driven applications with persistent storage.
 
 ## 📁 Repository Structure
@@ -117,10 +148,11 @@ AIML-Honors/
 ├── .gitignore
 ├── multi-gateway-payment-engine.py
 ├── employee_management.py
-└── employee_database.py
+├── employee_database.py
+└── employee_sqlite.py
 ```
 
-*Note: Ensure the Assignment 2 and Assignment 3 filenames match the actual files in the repository.*
+*Note: The `employee.db` file is generated automatically when Assignment 4 runs. The structure above assumes all four Python files are present in the repository.*
 
 ## 👨‍💻 Author
 
